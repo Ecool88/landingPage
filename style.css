@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    max-width: 1200px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > div.logo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+header > div.logo > img{
+    height: 100%;
+    width: auto;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+header > div.logo > span{
+    color: #ffdb47;
+    font-size: 3rem;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+header > nav{
+    margin-top: 20px;
+    margin-right: 50px;
+}
+header > nav > a{
+    text-decoration: none;
+    color: white;
+    margin-right: 1.8rem;
+}
+header > nav > a:hover{
+    color: blue;
+}
+
+
+
+main > section.slider{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > section.slider > img{
+    width: 100%;
+    height: 624px;
+    margin-top: -116px;
+    z-index: -2;
+}
+main > section.slider > div.shadow{
+    background-color: rgba(0,0,0,.4);
+    width: 100%;
+    height: calc(100% + 120px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -116px;
+    z-index: -1;
+}
+main > section.slider > div.text{
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+main > section.slider > div.text > h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 0;
+    font-weight: 500;
+}
+main > section.slider > div.text > h3{
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+main > section.slider > div.text > button{
+    border: none;
+    background: #709dca;
+    color: white;
+    margin-top: 6rem;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+main > section.slider > div.arrow{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #709dca;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+main > section.slider > div.arrow:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,.8);
+}
+main > section.slider > div.arrow:after{
+    content: '';
+    border-width: 3px 3px 0 0;
+    border-color: #ffc155;
+    border-style: solid;
+    width: 12.5px;
+    height: 12.5px;
+    position: absolute;
+}
+main > section.slider > div.arrow.left:after{
+    transform: rotate(-135deg);
+    margin-left: 4px;
+}
+main > section.slider > div.arrow.right:after{
+    transform: rotate(45deg);
+    margin-left: -4px;
+}
+main > section.slider > div.arrow.left{
+    left: 50px;
+}
+main > section.slider > div.arrow.right{
+    right: 50px;
+}
+main > section.offers{
+    max-width: 1200px;
+    margin: 5rem auto;
+}
+main > section.offers > div.offer{
+    display: flex;
+    flex-direction: column;
+}
+main > section.offers > div.offer > h3{
+    color: #709dca;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+main > section.offers > div.offer> span{
+    text-align: center;
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    color: #394b50;
+}
+main > section.offers > div{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+main > section.offers > div > article{
+    width: 40%;
+    display: flex;
+}
+main > section.offers > div > article > img{
+    width: 50px;
+    height: 50px;
+    margin-top: 2rem;
+}
+main > section.offers > div > article > div{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 15px 1rem;
+}
+main > section.offers > div > article > div > span{
+    font-size: .9rem;
+    color: grey;
+    line-height: 1.5;
+}
+main > section.offers > div > article > div > span:first-child{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+
+
+
+main > section.info{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    min-width: 576px;
+}
+main > section.info > img{
+    width: 50%;
+    height: auto;
+}
+main > section.info > article{
+    background-color: #ffc155;
+}
+main > section.info > article > div.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    font-size: .8rem;
+    color: white;
+}
+main > section.info > article > div.wrapper > h3{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+main > section.info > article > div.wrapper > span{
+    margin-bottom: 1rem;
+}
+main > section.info > article > div.wrapper > div{
+    margin-bottom: 1rem;
+}
+main > section.info > article > div.wrapper > button{
+    border: 2px solid #cb8d21;
+    background: #e7ad48;
+    color: white;
+    padding: 10px 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40%;
+}
+
+
+
+
+main > section.photo{
+    width: 100%;
+    margin: 2rem auto;
+    min-width: 576px;
+}
+main > section.photo > h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #709dca;
+}
+main > section.photo > h3:after{
+    content: '';
+    width: 200px;
+    height: 2px;
+    background-color: #e7ad48;
+    display: block;
+    margin-top: 7px;
+    margin: 1rem auto;
+}
+main > section.photo > div{
+    margin: 1rem auto;
+    font-size: .9rem;
+    color: #5a626b;
+    text-align: center;
+
+}
+main > section.photo > article > div{
+    display: flex;
+    justify-content: center;                
+}
+main > section.photo > article > div > div{
+    display: flex;
+    justify-content: center;                
+}
+main > section.photo > article > div > div >  img{
+    width: 50%;
+    height: auto;
+}
+
+
+
+
+
+
+
+main > section.reviews{
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+main > section.reviews > h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #709dca;
+}
+main > section.reviews > h3:after{
+    content: '';
+    width: 200px;
+    height: 2px;
+    background-color: #e7ad48;
+    display: block;
+    margin-top: 7px;
+    margin: 1rem auto;
+}
+main > section.reviews > div{
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-evenly;
+}
+main > section.reviews > div > article{  
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+main > section.reviews > div > article > div:first-child{
+    background-color: rgba(0,0,0,.03);
+    font-size: .9rem;
+    color: #5a626b;
+    text-align: left;
+    padding: 1rem;
+    font-style: italic;
+}
+main > section.reviews > div > article > div.user{
+    display: flex;
+    margin: .5rem 0;
+}
+main > section.reviews > div > article > div.user > img{
+    width: 50px;
+    height: 50px;  
+}
+main > section.reviews > div > article > div.user > span{
+    font-weight: 600;
+    font-size: .9rem;
+    color: #5a626b;
+    margin: auto .5rem;
+}
+
+
+
+
+
+main > section.form{
+    background-color: rgba(0,0,0,.06);
+    padding: 2rem 0;
+}
+main > section.form > form{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+main > section.form > form > h3{
+    color: #709dca;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+main > section.form > form > h3:after{
+    content: '';
+    width: 200px;
+    height: 2px;
+    background-color: #e7ad48;
+    display: block;
+    margin-top: 7px;
+    margin: 1rem auto;
+}
+main > section.form > form > div.row{
+    display: flex;
+    justify-content: space-between;
+}
+main > section.form > form > div.row > div.col{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+main > section.form > form > div.row > div.col > input,
+main > section.form > form > div.row > div.col > textarea{
+    border: 2px solid #ffc155;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+main > section.form > form > div.row > div.col > input{
+    margin-bottom: 10px;
+}
+main > section.form > form > div.row > div.col > button{
+    border: 2px solid #ffc155;
+    background-color: #273a43;
+    padding: 10px 0;
+    color: white;
+    font-size: 1.1rem;
+}
+main > section.form > form > div.row > div.col > textarea{
+    height: calc(100% - 10px);
+    box-sizing: border-box;
+    resize: none;
+    min-height: 5rem;
+}
+
+
+
+
+main > section.form > form > .emotions{
+    display: flex;
+}
+main > section.form > form > div.emotions > label {
+    margin-right: 1rem;
+}
+main > section.form > form > div.emotions > label > input[type="radio"] {
+    display: none;
+}
+main > section.form > form > .emotions > label  > svg {
+    width: 60px;
+    height: 60px;    
+}
+
+main > section.form > form > .emotions > label  > .icon > svg  {
+    fill: blue;    
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+footer > section{
+    background-color: #273a43;
+    padding: 2rem;
+}
+footer > section > div.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer > section > div.wrapper > article{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+footer > section > div.wrapper > article > div.logo{
+    display: flex;
+}
+footer > section > div.wrapper > article > div.logo > img{
+    width: 30px;
+    height: 30px;
+    margin: auto 0;
+}
+footer > section > div.wrapper > article > div.logo > h3{
+    color: #f5d347;
+    font-size: 1.2rem;
+    margin-left: .5rem;
+}
+footer > section > div.wrapper > article > div.invitation{
+    color: #c3c3c3;
+    line-height: 1.5;
+    font-size: .9rem;
+}
+footer > section > div.wrapper > article > h3{
+    color: white;
+    font-size: 1.2rem;
+}
+footer > section > div.wrapper > article > span > img{
+    width: 15px;
+    height: auto;
+}
+footer > section > div.wrapper > article > span > address{
+    display: inline;
+    font-style: normal;
+    color: #c3c3c3;
+    font-size: .9rem;
+    margin-left: .5rem;
+}
+footer > section > div.wrapper > article > span > a{
+    text-decoration: none;
+    color: #c3c3c3;
+    font-size: .9rem;
+    margin-left: .5rem;
+}
+footer > section > div.wrapper > article > div.lastnews{
+    color: #c3c3c3;
+    font-size: .9rem;
+}
+footer > section > div.wrapper > article > div.lastnews > div > span{
+    color: #71b6d5;
+}
+footer > div.lastwrap{
+    background-color: #172227;
+    padding: 2rem 0;
+}
+footer > div.lastwrap > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+
+}
+footer > div.lastwrap > div > div.social{
+    display: flex;
+}
+footer > div.lastwrap > div > div.social > a > img{
+    width: 25px;
+    height: 25px;
+    margin-right: .5rem;
+}
+
+
+
+
+
+
+@media (max-width: 1200px){
+    main > section:not(.slider):not(div.info):not(div.photo),
+    footer > div.lastwrap{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+
+
+@media (max-width: 992px){
+    header > div.logo > img{
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    header > nav{
+        margin-left: 2rem;
+        margin-right: 20px;
+    }
+    header > div.logo > span{
+        font-size: 1.5rem;
+    }
+
+
+    main > section.info > article   > div.wrapper > h3,
+    main > section.info > article   > div.wrapper > span,
+    main > section.info > article   > div.wrapper > button{
+        margin: 0 auto .5rem;
+    }
+
+}
+
+
+
+@media (max-width: 768px){
+    header > nav{
+        margin-right: 0;
+    }
+    header > nav > a{
+        margin-right: .8rem;
+    }
+    main > section.reviews > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main > section.reviews > div > article{
+        margin-bottom: 1rem;
+        width: 75%;
+    }
+    main > section.form > form > div.row{
+        flex-wrap: wrap;
+    }
+    main > section.form > form > div.row > div.col{
+        width: 100%;
+    }
+    main > section.form > form > div.row > div.col > textarea{
+        margin-bottom: 10px;
+    }
+
+    footer > div.lastwrap > div{
+        font-size: 0.8rem;
+    }
+    footer > div.lastwrap > div > div.social > a > img{
+        width: 20px;
+        height: 20px;
+        margin-right: .3rem;
+    }
+    footer > section > div.wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main > section.offers > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main > section.offers > div > article {
+        width: 70%;
+    }
+    main > section.info{
+        flex-direction: column;
+    }
+    main > section.info > img{
+        width: 100%;
+        height: auto;
+    }
+    footer > section > div.wrapper > article{
+        width: 70%;
+    }
+    main > section.photo > article > div > div{
+        display: flex;
+        flex-direction: column;               
+    }
+    main > section.photo > article > div > div >  img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px){
+    footer > section > div.wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > section > div.wrapper > article{
+        width: 60%;
+    }
+
+    /* footer > div.lastwrap > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    } */
+
+    footer > div.lastwrap > div > span{
+        margin-bottom: .8rem;
+    }
+
+    main > section.reviews > div > article{
+        margin-bottom: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+    main > section.photo > article > div{
+        display: flex;
+        flex-direction: column;               
+    }
+    main > section.photo > article > div > div{
+        display: flex;
+        flex-direction: column;               
+    }
+    main > section.photo > article > div > div >  img{
+        width: 100%;
+        height: auto;
+    }
+
+    html{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }    
+    body{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+
+
+
