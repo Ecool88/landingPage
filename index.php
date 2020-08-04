@@ -55,7 +55,7 @@ mysqli_close($link);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyMoscow</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>	
 </head>
 
 <body>
@@ -74,7 +74,7 @@ mysqli_close($link);
     </header>
     <main>
         <section class="slider">           
-            <img src="photos/top.jpg" />
+            <!-- <img src="photos/top.jpg" />
             <div class="shadow"></div>
             <div class="arrow left"></div>
             <div class="text">
@@ -82,7 +82,32 @@ mysqli_close($link);
                 <h3>MyMoscow - агенство интересных маршрутов</h3>
                 <button>Подробнее о нас</button>
             </div>
-            <div class="arrow right"></div>          
+            <div class="arrow right"></div>           -->
+            <div class="slides">
+                <div class="item">
+                    <img src="photos/top.jpg" alt="Первый слайд">
+                    <div class="slideText">MyMoscow - агенство интересных маршрутов</div>
+                </div>
+
+                <div class="item">
+                    <img src="photos/top.jpg" alt="Второй слайд">
+                    <div class="slideText">Заголовок слайда 2</div>
+                </div>
+
+                <div class="item">
+                    <img src="photos/top.jpg" alt="Третий слайд">
+                    <div class="slideText">Заголовок слайда 3</div>
+                </div>
+
+                <a class="prev" onclick="minusSlide()">&#10094;</a>
+                <a class="next" onclick="plusSlide()">&#10095;</a>
+        
+                <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>            
         </section>
         <section class="offers">
             <div class="offer">
