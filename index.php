@@ -59,30 +59,29 @@ mysqli_close($link);
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="icons/spasskaya-tower.png" />
-            <span>MyMoscow</span>
+    <nav>
+        <div class="nav-wrap">
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger" class="hamburger">
+            <span></span>
+        </label>
+
+        <div class="brand">
+            <a href="//localhost/landing/index.php">
+            MyMoscow            
+            </a>
         </div>
-        <nav>
+
+        <label for="hamburger" class="menu-bg">
             <a href="#">Главная</a>
-            <a href="#">Наши услуги</a>
             <a href="#">О компании</a>
-            <a href="#">Контакты</a>
-            <a href="#">Отзывы</a>
-        </nav>
-    </header>
+            <a href="#">Наши услуги</a>
+            <a href="#">Отзвывы</a>
+        </label>
+        </div>
+    </nav>
     <main>
-        <section class="slider">           
-            <!-- <img src="photos/top.jpg" />
-            <div class="shadow"></div>
-            <div class="arrow left"></div>
-            <div class="text">
-                <h2>Необычная Москва</h2>
-                <h3>MyMoscow - агенство интересных маршрутов</h3>
-                <button>Подробнее о нас</button>
-            </div>
-            <div class="arrow right"></div>           -->
+        <section class="slider"> 
             <div class="slides">
                 <div class="item">
                     <img src="photos/top.jpg" alt="Первый слайд">
@@ -90,13 +89,13 @@ mysqli_close($link);
                 </div>
 
                 <div class="item">
-                    <img src="photos/top.jpg" alt="Второй слайд">
-                    <div class="slideText">Заголовок слайда 2</div>
+                    <img src="photos/top2.jpg" alt="Второй слайд">
+                    <div class="slideText">MyMoscow - незабываемые места</div>
                 </div>
 
                 <div class="item">
-                    <img src="photos/top.jpg" alt="Третий слайд">
-                    <div class="slideText">Заголовок слайда 3</div>
+                    <img src="photos/top3.jpg" alt="Третий слайд">
+                    <div class="slideText">MyMoscow - увлекательно проведенное время</div>
                 </div>
 
                 <a class="prev" onclick="minusSlide()">&#10094;</a>
@@ -254,36 +253,6 @@ mysqli_close($link);
                         <textarea name="message" placeholder="Ваше сообщение" required></textarea>
                     </div>
                 </div>
-
-
-                <!-- <div class="emotions">
-
-                <?php
-                    $emotions = [
-                        "M 20,40 Q 30,30 40,40",
-                        "M 20,40 Q 30,35 40,40",
-                        "M 20,40 L 40,40",
-                        "M 20,40 Q 30,45 40,40",
-                        "M 10,35 Q 30,55 50,35"
-                    ];
-                ?>
-
-                <?php foreach($emotions as $id=>$path):?>                    
-                    <label>
-                        <svg  viewBox="0 0 60 60" version="1.1"  xmlns="http://www.w3.org/2000/svg">
-                    
-                            <circle id='shape' cx="30" cy="30" r="29" style="fill: blue" fill="transparent" stroke-width="1" stroke="black"/>
-                            <circle cx="20" cy="20" r="2"/>
-                            <circle cx="40" cy="20" r="2"/>
-                            <path d="<?=$path?>" fill="transparent" stroke="black" stroke-linecap="round"/>
-                        </svg>
-                        <input type="radio" name="reaction" value="<?=$id+1?>"/>
-                        <object type="image/svg+xml" data="moscow.svg" id="svg" class="icon"></object>             
-                    </label>
-                
-                <?php endforeach;?> -->
-
-
                 <div class="row">
                     <div class="col">
                         <button type="submit">отправить вопрос</button>
