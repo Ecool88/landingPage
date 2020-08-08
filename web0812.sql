@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Июл 31 2020 г., 21:21
+-- Время создания: Авг 08 2020 г., 14:00
 -- Версия сервера: 10.1.35-MariaDB
 -- Версия PHP: 7.2.9
 
@@ -21,6 +21,25 @@ SET time_zone = "+00:00";
 --
 -- База данных: `web0812`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `reviews`
+--
+
+CREATE TABLE `reviews` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `message` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `reviews`
+--
+
+INSERT INTO `reviews` (`id`, `name`, `message`) VALUES
+(1, 'Максим Кержаков', 'Всё топ!');
 
 -- --------------------------------------------------------
 
@@ -49,6 +68,12 @@ INSERT INTO `test` (`ID`, `FIO`, `EMAIL`, `PHONE`, `MESSAGE`, `REACTION`) VALUES
 --
 
 --
+-- Индексы таблицы `reviews`
+--
+ALTER TABLE `reviews`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `test`
 --
 ALTER TABLE `test`
@@ -57,6 +82,12 @@ ALTER TABLE `test`
 --
 -- AUTO_INCREMENT для сохранённых таблиц
 --
+
+--
+-- AUTO_INCREMENT для таблицы `reviews`
+--
+ALTER TABLE `reviews`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT для таблицы `test`

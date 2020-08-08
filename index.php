@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php 
 
 $link = mysqli_connect(
@@ -49,37 +46,10 @@ mysqli_close($link);
 <?php endif;?>
 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MyMoscow</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>	
-</head>
 
-<body>
-    <nav>
-        <div class="nav-wrap">
-        <input type="checkbox" id="hamburger" />
-        <label for="hamburger" class="hamburger">
-            <span></span>
-        </label>
-
-        <div class="brand">
-            <a href="//localhost/landing/index.php">
-            MyMoscow            
-            </a>
-        </div>
-
-        <label for="hamburger" class="menu-bg">
-            <a href="#">Главная</a>
-            <a href="#">О компании</a>
-            <a href="#">Наши услуги</a>
-            <a href="#">Отзвывы</a>
-        </label>
-        </div>
-    </nav>
+<?php
+    include('parts/header.php');
+?>
     <main>
         <section class="slider"> 
             <div class="slides">
@@ -261,62 +231,6 @@ mysqli_close($link);
             </form>
         </section>
     </main>
-    <footer>
-        <section>
-            <div class="wrapper">
-                <article>
-                    <div class="logo">
-                        <img src="icons/spasskaya-tower.png" alt="логотип">
-                        <h3>MyMoscow</h3>
-                    </div>
-                    <div class="invitation">Мы приглашаем тебя на самые разные экскурсии по Москве.
-                        Автобусные и пешеходные, на целый день или на несколько часов,
-                        на свежем воздухе или с заходом в здания - у нас в ассортименте более
-                        20 авторских экскурсий по Москве, выбирай и узнавай Москву вместе с нами!</div>
-                </article>
-                <article>
-                    <h3>Контакты</h3>
-                    <span>
-                        <img src="icons/placeholder.png" />
-                        <address>Москва, Большая Спасская 12</address>
-                    </span>
-                    <span>
-                        <img src="icons/mail.png" />
-                        <a href="mailto:moscow@imoscow.ru">moscow@imoscow.ru</a>
-                    </span>
-                    <span>
-                        <img src="icons/telephone.png" />
-                        <a href="tel:84956264600">8 (495) 626-46-00</a>
-                    </span>
-                </article>
-                <article>
-                    <h3>Последние новости</h3>
-                    <div class="lastnews">
-                        <div>Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                            per inceptos himenaeos. Suspendisse sit amet<br><span>5 марта 2018</span></div><br>
-                        <div>Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per <br><span>12 декабря
-                                2017</span></div>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <div class="lastwrap">
-            <div>
-                <span>2020 Все права защищены</span>
-                <span>Designed by Nordic IT School</span>
-                <div class="social">
-                    <a href="#vk">
-                        <img src="social/vk.png" alt=""></a>
-                    <a href="#facebook">
-                        <img src="social/facebook.png" alt=""></a>
-                    <a href="#instagram">
-                        <img src="social/instagram.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-
-</html>
+<?php
+    include('parts/footer.php');
+?>

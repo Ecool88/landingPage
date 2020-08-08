@@ -376,6 +376,7 @@ main > section.slider > div.slides > .item {
 main > section.offers{
     max-width: 1200px;
     margin: 5rem auto;
+    margin-left: 50px;
 }
 main > section.offers > div.offer{
     display: flex;
@@ -477,6 +478,7 @@ main > section.photo{
     width: 100%;
     margin: 2rem auto;
     min-width: 576px;
+    margin-left: 50px;
 }
 main > section.photo > h3{
     text-align: center;
@@ -522,6 +524,7 @@ main > section.photo > article > div > div >  img{
 main > section.reviews{
     max-width: 1200px;
     margin: 2rem auto;
+    margin-left: 50px;
 }
 main > section.reviews > h3{
     text-align: center;
@@ -578,6 +581,7 @@ main > section.reviews > div > article > div.user > span{
 main > section.form{
     background-color: rgba(0,0,0,.06);
     padding: 2rem 0;
+    margin-left: 50px;
 }
 main > section.form > form{
     max-width: 1200px;
@@ -602,7 +606,7 @@ main > section.form > form > h3:after{
 }
 main > section.form > form > div.row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 main > section.form > form > div.row > div.col{
     width: 48%;
@@ -635,7 +639,7 @@ main > section.form > form > div.row > div.col > textarea{
 
 
 
-main > section.form > form > .emotions{
+/* main > section.form > form > .emotions{
     display: flex;
 }
 main > section.form > form > div.emotions > label {
@@ -652,7 +656,7 @@ main > section.form > form > .emotions > label  > svg {
 main > section.form > form > .emotions > label  > .icon > svg  {
     fill: blue;    
     color: blue;
-}
+} */
 
 
 
@@ -671,6 +675,7 @@ footer > section > div.wrapper{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-left: 50px;
 }
 footer > section > div.wrapper > article{
     width: 25%;
@@ -734,7 +739,7 @@ footer > div.lastwrap > div{
     display: flex;
     justify-content: space-between;
     font-size: .9rem;
-
+    margin-left: 50px;
 }
 footer > div.lastwrap > div > div.social{
     display: flex;
@@ -744,8 +749,6 @@ footer > div.lastwrap > div > div.social > a > img{
     height: 25px;
     margin-right: .5rem;
 }
-
-
 
 
 
@@ -838,6 +841,9 @@ footer > div.lastwrap > div > div.social > a > img{
     main > section.info > img{
         width: 100%;
         height: auto;
+    }
+    main > section.info > article{
+        margin-left: 25px;
     }
     footer > section > div.wrapper > article{
         width: 70%;
