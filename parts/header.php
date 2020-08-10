@@ -27,7 +27,7 @@
                 <a href="//localhost/landing/index.php">Главная</a>
                 <a href="#">О компании</a>
                 <a href="#">Наши услуги</a>
-                <a href="//localhost/landing/reviews.php">Отзвывы</a>
+                <a href="//localhost/landing/reviews.php">Отзывы</a>
             </label>
             </div>
         </nav>
