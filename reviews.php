@@ -98,6 +98,14 @@
     include('parts/footer.php');
 ?>
 
+
+<script>
+    onload = function () {
+    for (var lnk = document.links, j =0; j < lnk.length; j++)
+    if (lnk [j].href == document.URL) lnk [j].style.cssText= 'background: #ffeba0;';
+}
+</script>
+
 <style>
 /* Стиль вкладки отзывов */
 body{

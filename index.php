@@ -13,11 +13,7 @@ if(!empty($_POST)){
         !empty($_POST['fio']) && 
         !empty($_POST['email']) && 
         !empty($_POST['phone']) &&
-        !empty($_POST['message']) &&
-        (
-            empty($_POST['reaction']) || 
-            !empty($_POST['reaction']) && $_POST['reaction'] <= 5 && $_POST['reaction'] > 0
-        )
+        !empty($_POST['message'])
     ){
         $query = "insert into test(FIO, EMAIL, PHONE, MESSAGE" . (!empty($_POST['reaction']) ? ", REACTION" : '') . ") 
             values('" . htmlspecialchars($_POST['fio']) . "', '" . htmlspecialchars($_POST['email']) . "', 
