@@ -69,7 +69,7 @@
         <button type="submit">Добавить статью</ button>   
     </div> 
 </form>
-
+<a href="/landing/admin/feedbacks.php"><button>Посмотреть заявки</button></a>
 
 
 <style>
@@ -151,6 +151,21 @@
     form > div.wrapper-button > button{        
         cursor: pointer;
         width: 80%;
+        height: 25px;
+        background-color: #1e73be;
+        color: white;
+        border-radius: 3px;
+        border: 1px solid #1e73be;
+        font-size: 1.1rem;
+    }
+    body > a{
+        margin: 0;
+        position: absolute;
+        top: 10px;
+        right: 90px;
+    }
+    body > a > button{
+        cursor: pointer;
         height: 25px;
         background-color: #1e73be;
         color: white;

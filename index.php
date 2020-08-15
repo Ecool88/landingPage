@@ -16,6 +16,7 @@ if(!empty($_POST)){
         if($res){
             $success = true;
             $_POST = [];
+            header('Location: http://localhost/landing/index.php');
         }
         else{
             $success = false;
@@ -26,7 +27,7 @@ mysqli_close($link);
 ?>
 
 <?php if(isset($success) && $success):?>
-    <h3>Данные успешно записаны</h3>
+    <h3>Данные успешно отправлены</h3>
 <?php elseif(isset($success) && !$success):?>
     <h3>Данные не записаны</h3>
 <?php endif;?>
@@ -215,7 +216,7 @@ mysqli_close($link);
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button type="submit">отправить вопрос</button>
+                        <button type="submit">Отправить вопрос</button>
                     </div>
                 </div>
             </form>

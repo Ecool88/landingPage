@@ -69,6 +69,7 @@
                     if($res){
                         $success = true;
                         $_POST = [];
+                        header('Location: //localhost/landing/article.php?id='.$_GET['id'].'');
                     }
                     else{
                         $success = false;

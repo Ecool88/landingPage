@@ -12,6 +12,7 @@
             if($res){
                 $success = true;
                 $_POST = [];
+                header('Location: http://localhost/landing/reviews.php');
             }
             else{
                 $success = false;
