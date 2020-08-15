@@ -1,12 +1,6 @@
 <?php 
 
-$link = mysqli_connect(
-    'localhost',
-    'root',
-    '',
-    'web0812'
-);
-mysqli_set_charset($link , "utf8");
+include_once($_SERVER['DOCUMENT_ROOT'] . '/landing/config/config.php');
 
 if(!empty($_POST)){
     if(

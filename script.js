@@ -1,3 +1,8 @@
+onload = function () {
+    for (var lnk = document.links, j =0; j < lnk.length; j++)
+    if (lnk [j].href == document.URL) lnk [j].style.cssText= 'background: #ffeba0;';
+}
+
 /* Индекс слайда по умолчанию */
 var slideIndex = 1;
 showSlides(slideIndex);

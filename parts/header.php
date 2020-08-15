@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,8 +24,8 @@
 
             <label for="hamburger" class="menu-bg">
                 <a href="//localhost/landing/index.php">Главная</a>
+                <a href="//localhost/landing/news.php">Новости MyMoscow</a>
                 <a href="#">О компании</a>
-                <a href="#">Наши услуги</a>
                 <a href="//localhost/landing/reviews.php">Отзывы</a>
             </label>
             </div>

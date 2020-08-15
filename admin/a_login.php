@@ -1,10 +1,9 @@
 <?php
     ini_set('session.cookie_lifetime', 5);
+    // print_r($_GET);
 
     if ( !empty($_GET) ) {
-        // 1. Запрос к БД на поиск пользователя с
-        //     указанными данными
-        include_once($_SERVER['DOCUMENT_ROOT'] . '/landing/admin/config.php');
+        include_once($_SERVER['DOCUMENT_ROOT'] . '/landing/config/config.php');
 
         $password = md5(md5($_GET['pass']));
         $query = "  SELECT `id`, `admin`   
@@ -18,16 +17,16 @@
         if ($result -> num_rows != 0 ) {
 
             $userInfo = $result -> fetch_assoc();
-            if ( $userInfo['admin'] == '1' ) {
+            // print_r($userInfo);
+            if ( $userInfo['admin'] == 1 ) {
                 echo 'Привет, админ!';
 
-                session_set_cookie_params(5);
+                session_set_cookie_params(3600);
                 session_start();
                 $_SESSION['admin'] = true;
-                header('Location: http://localhost/landing/admin/a_home.php');
+                header('location: /landing/admin/a_home.php');
 
-            }
-        } else {
+            } } else {
             echo 'Такого пользователя не существует! =(';
         };        
     }
@@ -51,3 +50,31 @@
     </form>
 </body>
 </html>
+
+
+<style>
+    body{
+        text-align: center;
+        display: block;
+    }
+    h1{
+        margin-bottom: 15px;
+        font-size: 20px;        
+    }
+    form{        
+        font-size: 13px;
+    }
+    form > input{
+        margin-bottom: 10px;
+        width: 270px;
+        padding: 6px 12px 8px;
+        border-radius: 3px;
+        border: 1px solid grey;
+        background: white;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    form > input:last-child{
+        background: #0dbbbb;
+    }
+</style> 

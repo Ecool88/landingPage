@@ -1,11 +1,5 @@
 <?php 
-    $link = mysqli_connect(
-        'localhost',
-        'root',
-        '',
-        'web0812'
-    );
-    mysqli_set_charset($link , "utf8");    
+    include_once($_SERVER['DOCUMENT_ROOT'] . '/landing/config/config.php');   
 
     if(!empty($_POST)){
         if(
@@ -46,7 +40,7 @@
     </form>
 </section>
 
-<h1>Список отзывов</h1>
+<h2>Список отзывов</h2>
 
 <?php
     if($link !== false){
@@ -99,15 +93,7 @@
 ?>
 
 
-<script>
-    onload = function () {
-    for (var lnk = document.links, j =0; j < lnk.length; j++)
-    if (lnk [j].href == document.URL) lnk [j].style.cssText= 'background: #ffeba0;';
-}
-</script>
-
 <style>
-/* Стиль вкладки отзывов */
 body{
     margin-left: 50px;
     padding: 0;
@@ -171,10 +157,9 @@ section.form > form > div.row > div > textarea{
     padding: 5px;
 }
 
-h1{
+h2{
     color: #eac336;
     font-size: 35px; 
-    /* transform: translate(-50%, -50%); */
     text-align: center;  
     text-shadow: 1px 1px 1px rgba(0,0,0,.7), 0 0 1em rgba(0,0,0,.7);
 }
