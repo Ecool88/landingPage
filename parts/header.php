@@ -25,7 +25,7 @@
             <label for="hamburger" class="menu-bg">
                 <a href="//localhost/landing/index.php">Главная</a>
                 <a href="//localhost/landing/news.php">Новости MyMoscow</a>
-                <a href="#">О компании</a>
+                <a href="//localhost/landing/company.php">О компании</a>
                 <a href="//localhost/landing/reviews.php">Отзывы</a>
             </label>
             </div>
