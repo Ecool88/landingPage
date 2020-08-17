@@ -10,8 +10,8 @@
 
     if(!empty($_GET) && !empty($_GET['del'])){
             
-        // $query = "UPDATE test SET REACTION='Позвонить клиенту' WHERE ID IN(" . implode(',', $_GET['del']) . ")";
-        $query = "DELETE FROM test WHERE ID IN(" . implode(',', $_GET['del']) . ")";
+        // $query = "UPDATE feedback SET REACTION='Позвонить клиенту' WHERE ID IN(" . implode(',', $_GET['del']) . ")";
+        $query = "DELETE FROM feedback WHERE ID IN(" . implode(',', $_GET['del']) . ")";
         $res = mysqli_query($link, $query);
         if(!$res){
             // var_dump(mysqli_error($link));
@@ -19,7 +19,7 @@
         }
     }
 
-    $query = "SELECT * FROM test;";
+    $query = "SELECT * FROM feedback;";
     $res = mysqli_query($link, $query);
 
     $feedbacks = [];

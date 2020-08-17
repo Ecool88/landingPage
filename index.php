@@ -9,7 +9,7 @@ if(!empty($_POST)){
         !empty($_POST['phone']) &&
         !empty($_POST['message'])
     ){
-        $query = "insert into test(FIO, EMAIL, PHONE, MESSAGE" . (!empty($_POST['reaction']) ? ", REACTION" : '') . ") 
+        $query = "insert into feedback(FIO, EMAIL, PHONE, MESSAGE" . (!empty($_POST['reaction']) ? ", REACTION" : '') . ") 
             values('" . htmlspecialchars($_POST['fio']) . "', '" . htmlspecialchars($_POST['email']) . "', 
             '" . htmlspecialchars($_POST['phone']) . "', '" . htmlspecialchars($_POST['message']) . "'" . (!empty($_POST['reaction']) ? ', \'' . htmlspecialchars($_POST['reaction']) . '\'' : '') . ");";
         $res = mysqli_query($link, $query);
@@ -206,12 +206,12 @@ mysqli_close($link);
                 <h3>Напишите нам</h3>
                 <div class="row">
                     <div class="col">
-                        <input type="text" name="fio" placeholder="ФИО" required/>
-                        <input type="email" name="email" placeholder="Email" required/>
-                        <input type="text" name="phone" placeholder="Телефон" required/>
+                        <input type="text" name="fio" placeholder="ФИО" required minlength="6" maxlength="30"/>
+                        <input type="email" name="email" placeholder="Email" required minlength="6" maxlength="30"/>
+                        <input type="text" name="phone" placeholder="Телефон" required minlength="6" maxlength="12"/>
                     </div>
                     <div class="col">
-                        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                        <textarea name="message" placeholder="Ваше сообщение" required minlength="5" maxlength="100"></textarea>
                     </div>
                 </div>
                 <div class="row">

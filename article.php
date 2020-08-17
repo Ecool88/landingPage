@@ -46,11 +46,11 @@
                 <h3>Оставьте отзыв о статье</h3>
                 <div class='row'>
                     <div>
-                        <input type="text" name="name" placeholder="Как вас зовут" required/>
+                        <input type="text" name="name" placeholder="Как вас зовут" required minlength="6" maxlength="30"/>
                         <button type="submit">Отправить отзыв</button>
                     </div>
                     <div>
-                        <textarea name="message" placeholder="Ваше сообщение" required></textarea>                
+                        <textarea name="message" placeholder="Ваше сообщение" required minlength="6" maxlength="30"></textarea>                
                     </div>
                 </div>        
             </form>
